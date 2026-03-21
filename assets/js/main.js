@@ -1,14 +1,14 @@
 /* Este arquivo importa e inicializa todos os módulos JS após o DOM estar completamente carregado. */
 
-import { initHeaderScroll  } from './headerScroll.js';
-import { initMobileMenu    } from './mobileMenu.js';
-import { initScrollSpy     } from './scrollSpy.js';
-import { initSmoothScroll  } from './smoothScroll.js';
-import { initScrollReveal  } from './scrollReveal.js';
-import { initTabs          } from './tabs.js';
-import { initStreamTabs    } from './streamTabs.js';
-import { initFaq           } from './faq.js';
-import { initStatsCounter  } from './statsCounter.js';
+import { initHeaderScroll  } from './assets/js/main.js';
+import { initMobileMenu    } from './assets/js/mobileMenu.js';
+import { initScrollSpy     } from './assets/js/scrollSpy.js';
+import { initSmoothScroll  } from './assets/js/smoothScroll.js';
+import { initScrollReveal  } from './assets/js/scrollReveal.js';
+import { initTabs          } from './assets/js/tabs.js';
+import { initStreamTabs    } from './assets/js/streamTabs.js';
+import { initFaq           } from './assets/js/faq.js';
+import { initStatsCounter  } from './assets/js/statsCounter.js';
 
 /* ── Aguarda o DOM estar pronto ── */
 document.addEventListener('DOMContentLoaded', () => {
