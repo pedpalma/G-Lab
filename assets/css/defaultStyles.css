@@ -45,12 +45,12 @@ button { font-family: inherit; }
   --header-h: 68px;
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: calc(var(--topbar-h) + var(--header-h) + 8px);
-}
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: calc(var(--topbar-h) + var(--header-h) + 8px);
+  }
 
-body {
+  body {
     font-family: 'Sora', sans-serif;
     font-size: 16px;
     line-height: 1.65;
@@ -58,6 +58,19 @@ body {
     background: var(--white);
     overflow-x: hidden;
   }
+
+  h1, h2, h3, h4 {
+    font-family: 'Sora', sans-serif;
+    line-height: 1.15;
+    font-weight: 700;
+  }
   
+  h1 { font-size: clamp(2.2rem, 5.5vw, 3.8rem); }
+  h2 { font-size: clamp(1.7rem, 3.5vw, 2.6rem); }
+  h3 { font-size: clamp(1rem, 2vw, 1.15rem); font-weight: 600; }
   
+  /* <em> dentro de h1/h2 vira ciano */
+  em { font-style: normal; color: var(--cyan); }
   
+  /* Parágrafos usam Barlow */
+  p { font-family: 'Barlow', sans-serif; font-weight: 400; line-height: 1.75; }
