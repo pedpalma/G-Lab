@@ -74,3 +74,45 @@ button { font-family: inherit; }
   
   /* Parágrafos usam Barlow */
   p { font-family: 'Barlow', sans-serif; font-weight: 400; line-height: 1.75; }
+
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(1rem, 4vw, 2.5rem);
+    width: 100%;
+  }
+  
+  
+  /* Section header */
+  .section-header { text-align: center; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+  .section-header--light .section-title { color: var(--white); }
+  
+  .section-title        { color: var(--navy); }
+  .section-title--light { color: var(--white); }
+  
+  /* Linha decorativa abaixo do título */
+  .section-header .section-title::after {
+    content: '';
+    display: block;
+    width: 44px; height: 3px;
+    background: var(--cyan);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+  }
+  .section-header--light .section-title::after {
+    background: rgba(0,198,255,.45);
+  }
+  
+  /* Label acima do título */
+  .section-label {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--blue-mid);
+    margin-bottom: 0.5rem;
+  }
+  .section-label--light { color: var(--cyan); }
+  
