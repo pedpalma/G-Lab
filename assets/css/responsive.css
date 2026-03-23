@@ -1,0 +1,122 @@
+@media (max-width: 1024px) {
+
+  /* Header: oculta o botão "Central do Assinante" para economizar espaço */
+  .header__actions .btn--outline-nav:nth-child(2) { display: none; }
+
+  /* Diferenciais: layout vira 1 coluna, imagem sobe para cima dos cards */
+  .diferenciais__layout {
+    grid-template-columns: 1fr;
+  }
+  .diferenciais__visual {
+    order:     -1;
+    max-width: 480px;
+    margin:    0 auto;
+  }
+  .diferenciais__img    { height: 300px; }
+  .diferenciais__grid   { grid-template-columns: 1fr 1fr; }
+
+  /* Contato: 2 colunas (2×2) */
+  .contato__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Sobre: empilhado verticalmente */
+  .sobre__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  /* Footer: 2 colunas */
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+
+  /* Use cases: 1 coluna centralizada */
+  .use-cases__grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+}
+
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE (≤ 768px)
+════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Topbar: fonte menor */
+  .topbar { font-size: 0.7rem; }
+
+  /* Header: oculta nav e botões desktop, exibe hamburguer */
+  .nav             { display: none !important; }
+  .header__actions { display: none !important; }
+  .hamburger       { display: flex !important; }
+
+  /* Hero: empilha texto acima do speed-card */
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap:         2rem;
+    padding-top: clamp(3rem, 6vw, 5rem);
+  }
+  .hero__card-wrap {
+    width:           100%;
+    display:         flex;
+    justify-content: center;
+  }
+  .speed-card { width: 100%; max-width: 340px; }
+
+  /* Stats do hero: grade 2×2 */
+  .hero__stats-grid { grid-template-columns: 1fr 1fr; }
+  .stat {
+    border-right:  none;
+    border-bottom: 1px solid rgba(255,255,255,.07);
+  }
+  .stat:nth-child(odd)       { border-right: 1px solid rgba(255,255,255,.07); }
+  .stat:nth-child(3),
+  .stat:nth-child(4)         { border-bottom: none; }
+
+  /* Diferenciais: cards em coluna única */
+  .diferenciais__grid { grid-template-columns: 1fr; }
+
+  /* Banner CTA: empilhado */
+  .banner-cta__inner {
+    flex-direction: column;
+    align-items:    flex-start;
+    gap:            2rem;
+  }
+
+  /* Planos: tabs menores, grid em coluna única */
+  .planos__tabs { gap: 0.4rem; }
+  .tab-btn      { padding: 0.48rem 1.1rem; font-size: 0.79rem; }
+  .planos__grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+
+  /* Contato: coluna única */
+  .contato__grid { grid-template-columns: 1fr; }
+
+  /* Footer: coluna única */
+  .footer__grid         { grid-template-columns: 1fr; gap: 1.8rem; }
+  .footer__bottom-inner { flex-direction: column; text-align: center; }
+
+  /* Hero: botões empilhados em coluna */
+  .hero__actions      { flex-direction: column; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+
+  /* Sobre: stats em 2 colunas */
+  .sobre__stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Use cases: coluna única */
+  .use-cases__grid { grid-template-columns: 1fr; }
+}
+
+
+/* ════════════════════════════════════════════════════════════════
+   MOBILE EXTRA SMALL (≤ 480px)
+════════════════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  /* Topbar: oculta o e-mail */
+  .topbar__item--hide-sm { display: none; }
+
+  /* Sobre: atributos em coluna única */
+  .sobre__stats-grid { grid-template-columns: 1fr; }
+
+  /* Streaming tabs: empilhados */
+  .streaming__tabs { flex-direction: column; align-items: center; }
+
+  /* Footer: textos centralizados */
+  .footer__bottom p { text-align: center; width: 100%; }
+
+  /* Stats do hero: compactados */
+  .stat          { padding: 0.9rem 0.6rem; }
+  .stat strong   { font-size: 1.3rem; }
+}
