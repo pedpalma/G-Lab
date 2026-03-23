@@ -2,8 +2,8 @@
 
 import { initHeaderScroll  } from './headerScroll.js';
 import { initMobileMenu    } from './mobileMenu.js';
-// import { initScrollSpy     } from './scrollSpy.js';
-// import { initSmoothScroll  } from './smoothScroll.js';
+import { initScrollSpy     } from './scrollSpy.js';
+import { initSmoothScroll  } from './smoothScroll.js';
 import { initScrollReveal  } from './scrollReveal.js';
 import { initTabs          } from './tabs.js';
 import { initStreamTabs    } from './streamTabs.js';
@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
 
   /* 3. Scroll Spy — destaca o link ativo na nav desktop */
-  // initScrollSpy();
+  initScrollSpy();
 
   /* 4. Smooth Scroll — rolagem suave para âncoras */
-  // initSmoothScroll();
+  initSmoothScroll();
 
   /* 5. Scroll Reveal — fade-in dos elementos .reveal */
   initScrollReveal();
