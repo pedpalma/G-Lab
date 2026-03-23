@@ -1,9 +1,9 @@
 @media (max-width: 1024px) {
 
-  /* Header: oculta o botão "Central do Assinante" para economizar espaço */
+  /* Header: oculta o botão "Central do Assinante" */
   .header__actions .btn--outline-nav:nth-child(2) { display: none; }
 
-  /* Diferenciais: layout vira 1 coluna, imagem sobe para cima dos cards */
+  /* Benefits: layout vira 1 coluna */
   .diferenciais__layout {
     grid-template-columns: 1fr;
   }
@@ -30,14 +30,14 @@
 
 
 /* ════════════════════════════════════════════════════════════════
-   MOBILE (≤ 768px)
+                            MOBILE
 ════════════════════════════════════════════════════════════════ */
 @media (max-width: 768px) {
 
   /* Topbar: fonte menor */
   .topbar { font-size: 0.7rem; }
 
-  /* Header: oculta nav e botões desktop, exibe hamburguer */
+  /* Header: oculta nav e botões */
   .nav             { display: none !important; }
   .header__actions { display: none !important; }
   .hamburger       { display: flex !important; }
@@ -65,7 +65,7 @@
   .stat:nth-child(3),
   .stat:nth-child(4)         { border-bottom: none; }
 
-  /* Diferenciais: cards em coluna única */
+  /* Benefits: cards em coluna única */
   .diferenciais__grid { grid-template-columns: 1fr; }
 
   /* Banner CTA: empilhado */
