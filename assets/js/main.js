@@ -5,8 +5,8 @@ import { initMobileMenu    } from './mobileMenu.js';
 // import { initScrollSpy     } from './scrollSpy.js';
 // import { initSmoothScroll  } from './smoothScroll.js';
 // import { initScrollReveal  } from './scrollReveal.js';
-// import { initTabs          } from './tabs.js';
-// import { initStreamTabs    } from './streamTabs.js';
+import { initTabs          } from './tabs.js';
+import { initStreamTabs    } from './streamTabs.js';
 // import { initFaq           } from './faq.js';
 import { initStatsCounter  } from './statsCounter.js';
 
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // initScrollReveal();
 
   /* 6. Tabs de planos — Internet / Streaming */
-  // initTabs();
+  initTabs();
 
   /* 7. Sub-tabs de streaming — Max / WatchBR */
-  // initStreamTabs();
+  initStreamTabs();
 
   /* 8. FAQ Accordion — abre/fecha perguntas */
   // initFaq();
