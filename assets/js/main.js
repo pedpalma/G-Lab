@@ -7,7 +7,7 @@ import { initSmoothScroll  } from './smoothScroll.js';
 import { initScrollReveal  } from './scrollReveal.js';
 import { initTabs          } from './tabs.js';
 import { initStreamTabs    } from './streamTabs.js';
-// import { initFaq           } from './faq.js';
+import { initFaq           } from './faq.js';
 import { initStatsCounter  } from './statsCounter.js';
 
 /* ── Aguarda o DOM estar pronto ── */
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initStreamTabs();
 
   /* 8. FAQ Accordion — abre/fecha perguntas */
-  // initFaq();
+  initFaq();
 
   /* 9. Stats Counter — anima os números do hero */
   initStatsCounter();
