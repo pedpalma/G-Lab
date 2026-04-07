@@ -11,9 +11,6 @@ The objective of the G-Lab website is to provide a simple and effective way for 
 - Clear and concise information about internet plans and services
 - Contact information and links to social media profiles
 
-# Preview
-![G-Lab Telecom](https://g-lab.vercel.app/)
-
 ## Desktop View
 ![alt text](./assets/images/desktop_view.png)
 
