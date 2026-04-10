@@ -98,6 +98,46 @@
   .use-cases__grid { grid-template-columns: 1fr; }
 }
 
+/* 
+TABLET
+*/
+@media (max-width: 900px) {
+
+  /* Header: oculta nav e botões */
+  .nav             { display: none !important; }
+  .header__actions { display: none !important; }
+  .hamburger       { display: flex !important; }
+
+  /* Banner CTA: empilhado */
+  .banner-cta__inner {
+    flex-direction: column;
+    align-items:    flex-start;
+    gap:            2rem;
+  }
+
+  /* Planos: tabs menores, grid em coluna única */
+  .planos__tabs { gap: 0.4rem; }
+  .tab-btn      { padding: 0.48rem 1.1rem; font-size: 0.79rem; }
+  .planos__grid { grid-template-columns: 1fr; max-width: 360px; margin: 0 auto; }
+
+  /* Contato: coluna única */
+  .contato__grid { grid-template-columns: 1fr; }
+
+  /* Footer: coluna única */
+  .footer__grid         { grid-template-columns: 1fr; gap: 1.8rem; }
+  .footer__bottom-inner { flex-direction: column; text-align: center; }
+
+  /* Hero: botões empilhados em coluna */
+  .hero__actions      { flex-direction: column; }
+  .hero__actions .btn { width: 100%; justify-content: center; }
+
+  /* Sobre: stats em 2 colunas */
+  .sobre__stats-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Use cases: coluna única */
+  .use-cases__grid { grid-template-columns: 1fr; }
+}
+
 
 /* ════════════════════════════════════════════════════════════════
    MOBILE EXTRA SMALL (≤ 480px)
