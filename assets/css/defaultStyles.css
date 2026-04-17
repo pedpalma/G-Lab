@@ -25,6 +25,7 @@ button { font-family: inherit; }
   --off-white:  #f4f7fe;
   --light-gray: #e8edf8;
   --mid-gray:   #8a97b8;
+  --dark-gray:  #444d69;
   --dark-text:  #0f1b35;
 
   /* Feedback */
