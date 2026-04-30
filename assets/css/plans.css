@@ -247,9 +247,8 @@
 .plano-card__features li i { color: var(--success); flex-shrink: 0; }
 
 .plano-card__note {
-  font-size:   0.62rem;
-  color:       rgba(255,255,255,.28);
-  margin-top:  0.7rem;
+  font-size:   0.7rem;
+  color:       var(--transparent-grey);
   font-family: 'Barlow', sans-serif;
   font-style: italic;
 }

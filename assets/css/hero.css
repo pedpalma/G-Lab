@@ -138,3 +138,11 @@
   color:       rgba(255,255,255,.8);
 }
 .speed-card__features li i { color: var(--success); flex-shrink: 0; }
+
+.speed-card__note {
+  font-size:   0.80rem;
+  color:        var(--transparent-grey);
+  margin-bottom: 0.7rem;
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+}
