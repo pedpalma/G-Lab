@@ -15,7 +15,7 @@
 
 /* Card de caso de uso */
 .use-case-card {
-  border-radius: 16px;
+  border-radius: 8px;
   overflow:      hidden;
   border:        1px solid var(--light-gray);
   background:    var(--white);
@@ -51,7 +51,6 @@
 .use-case-card__icon {
   width:           40px;
   height:          40px;
-  background:      var(--navy-mid);
   border-radius:   10px;
   display:         flex;
   align-items:     center;

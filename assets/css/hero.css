@@ -60,23 +60,6 @@
   padding-bottom: clamp(1.5rem, 5vw, 4rem);
 }
 
-/* Badge/pílula de destaque */
-.badge {
-  display:       inline-flex;
-  align-items:   center;
-  gap:           0.45rem;
-  background:    var(--cyan-dim);
-  border:        1px solid rgba(0,198,255,.3);
-  color:         var(--cyan);
-  font-size:     0.72rem;
-  font-weight:   600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding:       0.38rem 1rem;
-  border-radius: 100px;
-  margin-bottom: 1.3rem;
-}
-
 /* Título do hero */
 .hero__title         { color: var(--white); margin-bottom: 1.2rem; }
 .hero__title--accent { color: var(--cyan); }
@@ -104,8 +87,8 @@
   backdrop-filter:   blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-radius:     16px;
-  padding:           2rem 1.8rem;
-  width:             240px;
+  padding:           2.8rem 1.8rem;
+  width:             360px;
   text-align:        center;
   box-shadow:        var(--shadow-glow);
 }
@@ -145,6 +128,7 @@
   flex-direction: column;
   gap:           0.5rem;
   margin-bottom: 1.4rem;
+  margin-left: 4rem;
 }
 .speed-card__features li {
   display:     flex;
@@ -166,7 +150,7 @@
 
 .hero__stats-grid {
   display:               grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .stat {

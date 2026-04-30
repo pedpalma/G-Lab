@@ -46,7 +46,6 @@
   flex-shrink:     0;
   width:           42px;
   height:          42px;
-  background:      linear-gradient(135deg, var(--navy), var(--blue-mid));
   border-radius:   10px;
   display:         flex;
   align-items:     center;
@@ -62,7 +61,7 @@
 .diferenciais__visual { position: relative; }
 
 .diferenciais__img-wrap {
-  border-radius: 16px;
+  border-radius: 10px;
   overflow:      hidden;
   box-shadow:    var(--shadow-lg);
 }
@@ -73,23 +72,4 @@
   object-fit:      cover;
   object-position: center;
   display:         block;
-}
-
-/* Badge flutuante sobre a imagem */
-.diferenciais__badge {
-  position:        absolute;
-  bottom:          1.2rem;
-  left:            1.2rem;
-  background:      rgba(4,18,43,.85);
-  backdrop-filter: blur(8px);
-  border:          1px solid rgba(0,198,255,.35);
-  color:           var(--cyan);
-  font-family:     'Sora', sans-serif;
-  font-size:       0.76rem;
-  font-weight:     600;
-  padding:         0.42rem 0.85rem;
-  border-radius:   100px;
-  display:         flex;
-  align-items:     center;
-  gap:             0.4rem;
 }
