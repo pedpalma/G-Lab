@@ -12,6 +12,7 @@ import { initStatsCounter  } from './statsCounter.js';
 import { initWatchbrSelector } from './watchbrSelector.js';
 import { initEnhancements } from './enhancements.js';
 import { initHeroSlider } from './heroSlider.js';
+import { initCursor } from './cursor.js';
 
 /* ── Aguarda o DOM estar pronto ── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,5 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Slider */
   initHeroSlider();
+
+  /* Cursor */
+  initCursor();
+
 
 });
