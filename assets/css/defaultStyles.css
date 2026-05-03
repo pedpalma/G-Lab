@@ -22,6 +22,7 @@ button { font-family: inherit; }
 
   /* Neutros */
   --white:      #ffffff;
+  --transparent-grey:  #f4f7fe8e;
   --off-white:  #f4f7fe;
   --light-gray: #e8edf8;
   --mid-gray:   #8a97b8;
