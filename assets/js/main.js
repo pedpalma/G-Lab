@@ -13,6 +13,7 @@ import { initWatchbrSelector } from './watchbrSelector.js';
 import { initEnhancements } from './enhancements.js';
 import { initHeroSlider } from './heroSlider.js';
 import { initCursor } from './cursor.js';
+import { initTypewriter } from './typewriter.js';
 
 /* ── Aguarda o DOM estar pronto ── */
 document.addEventListener('DOMContentLoaded', () => {
@@ -55,6 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Cursor */
   initCursor();
+
+  /* TypeWriter */
+  initTypewriter();
 
 
 });
