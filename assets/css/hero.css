@@ -146,3 +146,32 @@
   font-family: 'Barlow', sans-serif;
   font-style: italic;
 }
+
+/* Canvas da animação de fibra óptica */
+#fiber-canvas {
+  position:       absolute;
+  inset:          0;
+  z-index:        2;
+  pointer-events: none;
+  opacity:        0.55;
+}
+ 
+/* Glassmorphism */
+.speed-card {
+  background:               rgba(255, 255, 255, .07);
+  backdrop-filter:          blur(20px);
+  -webkit-backdrop-filter:  blur(20px);
+  border:                   1px solid rgba(255, 255, 255, .18);
+  box-shadow:
+    var(--shadow-glow),
+    0 0 0 1px rgba(0, 198, 255, .15),
+    inset 0 1px 0 rgba(255, 255, 255, .08);
+}
+ 
+/* Stats */
+.stat strong {
+  background:              linear-gradient(135deg, var(--white), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:         text;
+}
