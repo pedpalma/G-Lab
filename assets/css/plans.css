@@ -42,7 +42,7 @@
   border:      1.5px solid rgba(255,255,255,.2);
   background:  transparent;
   color:       rgba(255,255,255,.6);
-  font-family: 'Sora', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size:   0.85rem;
   font-weight: 500;
   cursor:      pointer;
@@ -139,7 +139,7 @@
   transform:      translateX(-50%);
   background:     var(--cyan);
   color:          var(--navy);
-  font-family:    'Sora', sans-serif;
+  font-family:    'Space Grotesk', sans-serif;
   font-size:      0.67rem;
   font-weight:    700;
   letter-spacing: 0.08em;
@@ -165,7 +165,7 @@
   transform:      translateX(-50%);
   background:     var(--mid-gray);
   color:          var(--dark-text);
-  font-family:    'Sora', sans-serif;
+  font-family:    'Space Grotesk', sans-serif;
   font-size:      0.67rem;
   font-weight:    700;
   letter-spacing: 0.08em;
@@ -249,7 +249,7 @@
   font-size:     0.72rem;
   color:         rgba(255,255,255,.45);
   margin-bottom: 0.9rem;
-  font-family:   'Barlow', sans-serif;
+  font-family:   'Space Grotesk', sans-serif;
 }
 
 .plano-card__price {
@@ -277,18 +277,18 @@
   gap:         0.45rem;
   font-size:   0.8rem;
   color:       rgba(255,255,255,.75);
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 .plano-card__features li i { color: var(--success); flex-shrink: 0; }
 
 /* ── Nota de vencimento abaixo do preço ── */
 
 .plano-card__note {
-  font-family:   'Barlow', sans-serif;
-  font-size:     0.72rem;
-  color:         rgba(255, 255, 255, .5);
+  font-family:   'Space Grotesk', sans-serif;
+  font-size:     0.85rem;
+  color:         var(--off-white);
   text-align:    center;
-  margin-bottom: 0.9rem;
+  margin-top: 1rem;
   line-height:   1.5;
   font-style: italic;
 }
@@ -299,7 +299,7 @@
 
 /* ── Nome do plano ── */
 .plano-card__plan-name {
-  font-family:    'Sora', sans-serif;
+  font-family:    'Space Grotesk', sans-serif;
   font-size:      0.85rem;
   font-weight:    700;
   color:          var(--white);
@@ -326,7 +326,7 @@
   transform:      translateX(-50%);
   background:     #6c757d;
   color:          var(--white);
-  font-family:    'Sora', sans-serif;
+  font-family:    'Space Grotesk', sans-serif;
   font-size:      0.67rem;
   font-weight:    700;
   letter-spacing: 0.08em;
@@ -347,7 +347,7 @@
 
 /* Botão individual de velocidade */
 .wbr-speed-btn {
-  font-family:   'Sora', sans-serif;
+  font-family:   'Space Grotesk', sans-serif;
   font-size:     0.68rem;
   font-weight:   600;
   padding:       0.28rem 0.6rem;

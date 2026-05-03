@@ -65,7 +65,7 @@
 }
 
 .contato-card h3 { font-size: 0.95rem; color: var(--white); }
-.contato-card p  { font-size: 0.82rem; color: var(--mid-gray); font-family: 'Barlow', sans-serif; }
+.contato-card p  { font-size: 0.82rem; color: var(--mid-gray); font-family: 'Space Grotesk', sans-serif; }
 
 /* CTA com seta animada no hover */
 .contato-card__cta {

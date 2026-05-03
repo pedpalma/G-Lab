@@ -53,7 +53,7 @@ button { font-family: inherit; }
   }
 
   body {
-    font-family: 'Sora', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 16px;
     line-height: 1.65;
     color: var(--dark-text);
@@ -76,7 +76,7 @@ button { font-family: inherit; }
   em { font-style: normal; color: var(--cyan); }
   
   /* Parágrafos usam Barlow */
-  p { font-family: 'Barlow', sans-serif; font-weight: 400; line-height: 1.75; }
+  p { font-family: 'Space Grotesk', sans-serif; font-weight: 400; line-height: 1.75; }
 
   /* Container */
   .container {
