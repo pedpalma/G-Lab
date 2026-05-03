@@ -36,7 +36,7 @@ O objetivo central é apresentar os planos de internet fibra óptica, converter 
 
 | Desktop | Mobile |
 |---|---|
-| ![Desktop View](./assets/images/desktop_view.png) | ![Mobile View](./assets/images/mobile_view.png) |
+| ![Desktop View](./assets/images/new.png) | ![Mobile View](./assets/images/new_mobile.png) |
 
 ---
 
