@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="./assets/css/mobileMenu.css" />
     <link rel="stylesheet" href="./assets/css/hero.css" />
     <link rel="stylesheet" href="./assets/css/benefits.css" />
-    <link rel="stylesheet" href="./assets/css/useCases.css" />
     <link rel="stylesheet" href="./assets/css/aboutUs.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="./assets/css/faq.css" />
@@ -46,6 +45,7 @@
     <link rel="stylesheet" href="./assets/css/reveal.css" />
     <link rel="stylesheet" href="./assets/css/cursor.css" />
     <link rel="stylesheet" href="./assets/css/scrollInProgress.css" />
+    <link rel="stylesheet" href="./assets/css/localization.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
 
@@ -846,62 +846,124 @@
       </div>
     </section>
     <!-- ══════════════════════════════════════════════════════════════
-                                    USE CASES
+                                LOCALIZATION
         ═══════════════════════════════════════════════════════════════ -->
-    <section class="use-cases-new">
+    <section class="localizacao" id="localizacao">
+      <div class="localizacao__bg" aria-hidden="true"></div>
       <div class="container">
-        <div class="section-header">
-          <h1 class="title">Internet para <em>cada momento</em>,</h1>
-          <h2 class="">para <em>todo mundo</em></h2>
+        <div class="localizacao__header reveal">
+          <span class="localizacao__eyebrow">
+            <span class="localizacao__eyebrow-line"></span>
+            Onde nos encontrar
+          </span>
+          <h2 class="localizacao__title">
+            Duas unidades em<br /><em>Mauá</em> para te atender
+          </h2>
         </div>
 
-        <div class="use-cases-list">
-          <!-- Caso 1: Streaming -->
-          <article class="case-item">
-            <div class="case-content">
-              <div class="case-tag">
-                <i class="ph ph-television-simple"></i> Entretenimento
-              </div>
-              <h3>Streaming sem travamentos</h3>
-              <p>
-                Assista filmes e séries em 4K com múltiplos dispositivos
-                simultâneos sem nenhuma queda de velocidade ou perda de
-                qualidade.
-              </p>
-              <a href="#planos" class="btn-link"
-                >Conhecer planos <i class="ph ph-arrow-right"></i
-              ></a>
-            </div>
-            <div class="case-image">
-              <img
-                src="./assets/images/content-teen-girls-watching-movie.jpg"
-                alt="Streaming 4K"
-              />
-            </div>
-          </article>
+        <div class="localizacao__grid">
+          <!-- ── Unidade Central ── -->
+          <div class="loc-card reveal">
+            <span class="loc-card__num" aria-hidden="true">01</span>
 
-          <!-- Caso 2: Conectividade (Invertido no Desktop) -->
-          <article class="case-item reverse">
-            <div class="case-content">
-              <div class="case-tag">
-                <i class="ph ph-device-mobile"></i> Conectividade
+            <div class="loc-card__photo">
+              <!--<img src="./assets/images/frenteglab.jpg" alt="Fachada da unidade Central G-Lab Telecom" loading="lazy"/>-->
+              <div>
+                <img
+                  src="./assets/images/fachada.jpeg"
+                  alt="Fachada da unidade Central G-Lab Telecom"
+                  loading="lazy"
+                />
+                <i class="ph ph-buildings"></i>
+                foto da fachada
               </div>
-              <h3>Conectado em todo lugar</h3>
-              <p>
-                Wi-Fi de alta performance em toda a casa para navegar, estudar e
-                se comunicar sem interrupções, não importa o cômodo.
-              </p>
-              <a href="#planos" class="btn-link"
-                >Conhecer planos <i class="ph ph-arrow-right"></i
-              ></a>
+
+              <div class="loc-card__chip">
+                <span class="loc-chip__dot"></span>
+                Unidade Central
+              </div>
             </div>
-            <div class="case-image">
-              <img
-                src="./assets/images/content-teen-smiling.jpg"
-                alt="Conectividade total"
-              />
+
+            <div class="loc-card__info">
+              <p class="loc-card__name">Matriz: Vila Guarani</p>
+
+              <div class="loc-card__rule"></div>
+
+              <div class="loc-card__meta">
+                <span class="loc-card__row">
+                  <i class="ph ph-map-pin"></i>
+                  R. Luís Bernardi, 101: Vila Guarani, Mauá – SP, 09310-240
+                </span>
+                <span class="loc-card__row">
+                  <i class="ph ph-clock"></i>
+                  Seg – Sex: 8h às 18h &nbsp;·&nbsp; Sáb: 8h às 12h
+                </span>
+                <span class="loc-card__row">
+                  <i class="ph ph-phone"></i>
+                  (11) 2500-3241
+                </span>
+              </div>
+
+              <a
+                href="https://maps.google.com/?q=R.+Luís+Bernardi,+101,+Vila+Guarani,+Mauá+SP"
+                target="_blank"
+                rel="noopener"
+                class="loc-card__maps-btn"
+              >
+                <i class="ph ph-map-trifold"></i>
+                Ver no Google Maps
+              </a>
             </div>
-          </article>
+          </div>
+
+          <!-- ── Unidade Shopping ── -->
+          <div class="loc-card reveal">
+            <span class="loc-card__num" aria-hidden="true">02</span>
+
+            <div class="loc-card__photo">
+              <!--<img src="./assets/images/fachada-shopping.jpg" alt="Fachada da unidade Shopping Nova Estação G-Lab Telecom" loading="lazy"/>-->
+              <div class="loc-card__photo-placeholder">
+                <i class="ph ph-buildings"></i>
+                foto da fachada
+              </div>
+
+              <div class="loc-card__chip">
+                <span class="loc-chip__dot"></span>
+                Shopping Nova Estação
+              </div>
+            </div>
+
+            <div class="loc-card__info">
+              <p class="loc-card__name">Filial: Shopping Nova Estação</p>
+
+              <div class="loc-card__rule"></div>
+
+              <div class="loc-card__meta">
+                <span class="loc-card__row">
+                  <i class="ph ph-map-pin"></i>
+                  Shopping Nova Estação: Mauá, SP
+                </span>
+                <span class="loc-card__row">
+                  <i class="ph ph-clock"></i>
+                  Seg – Sáb: 10h às 22h &nbsp;·&nbsp; Dom: 12h às 20h
+                </span>
+                <span class="loc-card__row">
+                  <i class="ph ph-phone"></i>
+                  (11) 2500-3241
+                </span>
+              </div>
+
+              <a
+                href="https://maps.google.com/?q=Shopping+Nova+Estação+Mauá+SP"
+                target="_blank"
+                rel="noopener"
+                class="loc-card__maps-btn"
+              >
+                <i class="ph ph-map-trifold"></i>
+                Ver no Google Maps
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

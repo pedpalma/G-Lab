@@ -1,0 +1,315 @@
+/* ════════════════════════════════════════════════════════════════
+                        LOCALIZAÇÃO
+════════════════════════════════════════════════════════════════ */
+
+.localizacao {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  background: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Decoração: linhas diagonais sutis */
+.localizacao__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(
+    -55deg,
+    rgba(255, 255, 255, 0.018) 0px,
+    rgba(255, 255, 255, 0.018) 1px,
+    transparent 1px,
+    transparent 60px
+  );
+}
+
+.localizacao__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 55% 60% at 5% 50%,
+      rgba(0, 198, 255, 0.05) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 45% 50% at 95% 50%,
+      rgba(16, 69, 168, 0.15) 0%,
+      transparent 60%
+    );
+}
+
+.localizacao .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+.localizacao__header {
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.localizacao__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: "Space Grotesk";
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  margin-bottom: 0.8rem;
+}
+
+.localizacao__eyebrow-line {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: var(--cyan);
+  border-radius: 2px;
+}
+
+.localizacao__title {
+  font-family: "Space Grotesk";
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.1;
+}
+
+.localizacao__title em {
+  font-style: normal;
+  color: var(--cyan);
+}
+
+/* ── Grid ── */
+.localizacao__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.8rem;
+}
+
+@media (max-width: 768px) {
+  .localizacao__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Card ── */
+.loc-card {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--navy-mid);
+  border: 1px solid rgb(0, 0, 0);
+  transition:
+    border-color 0.35s,
+    transform 0.35s var(--ease),
+    box-shadow 0.35s;
+  display: flex;
+  flex-direction: column;
+}
+
+.loc-card:hover {
+  border-color: rgba(0, 198, 255, 0.28);
+  transform: translateY(-5px);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(0, 198, 255, 0.1);
+}
+
+/* Número decorativo de fundo */
+.loc-card__num {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  font-family: "Space Grotesk";
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.025);
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+
+/* ── Foto da fachada ── */
+.loc-card__photo {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  background: var(--navy-light);
+  flex-shrink: 0;
+}
+
+.loc-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition:
+    transform 0.6s var(--ease),
+    filter 0.4s;
+  filter: brightness(0.88);
+}
+
+.loc-card:hover .loc-card__photo img {
+  transform: scale(1.04);
+  filter: brightness(1);
+}
+
+/* Placeholder caso não haja foto ainda */
+.loc-card__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: linear-gradient(135deg, var(--navy-light), var(--navy-mid));
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.loc-card__photo-placeholder i {
+  font-size: 2.6rem;
+  color: rgba(0, 198, 255, 0.22);
+}
+
+/* Chip de unidade flutuante sobre a foto */
+.loc-card__chip {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.38rem;
+  background: rgba(4, 18, 43, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 198, 255, 0.25);
+  border-radius: 100px;
+  padding: 0.28rem 0.75rem 0.28rem 0.5rem;
+  font-family: "Space Grotesk";
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+/* Ponto vivo no chip */
+.loc-chip__dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.loc-chip__dot::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 198, 255, 0.55);
+  animation: chip-pulse 2.2s ease-out infinite;
+}
+
+@keyframes chip-pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* ── Info ── */
+.loc-card__info {
+  position: relative;
+  z-index: 1;
+  padding: 1.4rem 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.loc-card__name {
+  font-family: "Space Grotesk";
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.25;
+}
+
+.loc-card__rule {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.loc-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.48rem;
+}
+
+.loc-card__row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-family: "Space Grotesk";
+  font-size: 0.84rem;
+  color: var(--mid-gray);
+  line-height: 1.55;
+}
+
+.loc-card__row i {
+  font-size: 0.95rem;
+  color: var(--cyan);
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+/* Botão Google Maps */
+.loc-card__maps-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Space Grotesk";
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--navy);
+  background: var(--cyan);
+  border-radius: 8px;
+  padding: 0.58rem 1.1rem;
+  text-decoration: none;
+  transition:
+    background 0.25s,
+    transform 0.25s var(--ease),
+    box-shadow 0.25s;
+  align-self: flex-start;
+  margin-top: 0.3rem;
+}
+
+.loc-card__maps-btn:hover {
+  background: #33d1ff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 198, 255, 0.35);
+}
+
+.loc-card__maps-btn i {
+  font-size: 1rem;
+}
